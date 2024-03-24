@@ -10,8 +10,6 @@ const getPortfolioItems = async () => {
     content_type: "portfolioItem",
   });
 
-  console.log(response.items);
-
   return response.items;
 };
 
