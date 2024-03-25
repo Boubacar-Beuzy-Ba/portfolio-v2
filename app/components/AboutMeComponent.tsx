@@ -1,12 +1,16 @@
 import Image from "next/image";
-import profileImg2 from "../assets/LinkdinProfile2.jpeg";
+import profileImg2 from "../assets/Profile2.jpg";
 
 export const AboutMeComponent = () => {
   return (
     <>
       <div className="flex items-center gap-2 mx-10 my-10">
         <div className="w-1/2 flex items-center justify-center">
-          <Image src={profileImg2} alt="About Boubacar" className="w-full" />
+          <Image
+            src={profileImg2}
+            alt="About Boubacar"
+            className="w-full rounded-2xl"
+          />
         </div>
         <div className="w-1/2 p-4">
           <h3 className="font-bold text-2xl text-black">About Me</h3>

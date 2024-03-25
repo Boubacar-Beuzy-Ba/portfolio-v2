@@ -25,7 +25,7 @@ export const HeroComponent = () => {
           <Image
             src={profileImg}
             alt="Boubacar"
-            className="object-cover w-1/2"
+            className="object-cover w-1/2 rounded-2xl"
           />
         </div>
       </div>
