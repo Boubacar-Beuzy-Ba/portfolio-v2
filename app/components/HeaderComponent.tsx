@@ -26,7 +26,7 @@ export const HeaderComponent = () => {
   ];
   return (
     <>
-      <div className="flex justify-around mx-4 text-gray-600 py-4 items-center">
+      <div className="flex justify-around mx-4 text-gray-600 py-4 items-center sticky top-0 bg-white">
         <div className="flex justify-around gap-4">
           {menu &&
             menu.map((m) => (
