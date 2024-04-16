@@ -10,14 +10,18 @@ export default function Home() {
     <>
       <HeaderComponent />
       <HeroComponent />
-      <AboutMeComponent />
-      <div>
+      <div className="mx-auto w-[75%]">
+        <AboutMeComponent />
+      </div>
+      <div className="w-[75%] mx-auto">
         <hr className="mx-16" />
         <h2 className="text-2xl text-center font-semibold my-6">Projects</h2>
         <ProjectCardComponent />
         <hr className="mx-16" />
       </div>
-      <ContactMeConponent />
+      <div className="w-[75%] mx-auto">
+        <ContactMeConponent />
+      </div>
     </>
   );
 }

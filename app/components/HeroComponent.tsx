@@ -4,7 +4,7 @@ import profileImg from "../assets/profile.jpg";
 export const HeroComponent = () => {
   return (
     <div className="w-full bg-[#F5FCFF]">
-      <div className="flex justify-between gap-2 items-center mx-10">
+      <div className="flex justify-between gap-2 items-center mx-auto w-[75%]">
         <div className="p-2 w-1/2">
           <h5 className="text-base font-semibold my-2">Hey, I am Boubacar</h5>
           <h2 className="text-2xl font-semibold my-2">
@@ -21,7 +21,7 @@ export const HeroComponent = () => {
             </button>
           </div>
         </div>
-        <div className="w-1/2 flex items-center justify-center">
+        <div className="w-1/2 flex items-center justify-end">
           <Image
             src={profileImg}
             alt="Boubacar"
