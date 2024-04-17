@@ -63,7 +63,12 @@ export const HeaderComponent = () => {
             </Link>
           </button>
           <button className="p-4 rounded-lg hover:shadow-md">
-            <Link href="#" target="_blank">
+            <Link
+              href="/Boubacar Resume CSM & Web.pdf"
+              locale={false}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GrDocumentPdf />
             </Link>
           </button>

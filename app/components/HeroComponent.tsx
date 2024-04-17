@@ -6,11 +6,11 @@ export const HeroComponent = () => {
     <div className="w-full bg-[#F5FCFF]">
       <div className="flex justify-between gap-2 items-center mx-auto w-[75%]">
         <div className="p-2 w-1/2">
-          <h5 className="text-base font-semibold my-2">Hey, I am Boubacar</h5>
-          <h2 className="text-2xl font-semibold my-2">
+          <h5 className="text-lg font-semibold my-2">Hey, I am Boubacar</h5>
+          <h2 className="text-3xl font-semibold my-2">
             I create website and web app experience
           </h2>
-          <p className="text-sm my-2">
+          <p className="text-lg my-2">
             Experienced React Developer with expertise in customer success, IT
             support, and logistics e-commerce operations. Proven in web
             solutions delivery, customer satisfaction, and process optimization.
