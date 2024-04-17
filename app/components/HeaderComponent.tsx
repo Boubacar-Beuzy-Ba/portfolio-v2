@@ -1,5 +1,9 @@
 import Link from "next/link";
 import { ThemeSwitcher } from "./ThemeSwitcher";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+import { GrDocumentPdf } from "react-icons/gr";
 
 export const HeaderComponent = () => {
   const menu = [
@@ -40,7 +44,29 @@ export const HeaderComponent = () => {
             ))}
         </div>
         <div className="flex gap-1 items-center">
-          <button className="p-4 rounded-sm border">Download CV</button>
+          <button className="p-4 rounded-lg hover:shadow-md">
+            <Link href="https://github.com/Boubacar-Beuzy-Ba" target="_blank">
+              <FaGithub />
+            </Link>
+          </button>
+          <button className="p-4 rounded-lg hover:shadow-md">
+            <Link
+              href="https://www.linkedin.com/in/boubacar-ba-491246145/"
+              target="_blank"
+            >
+              <FaLinkedin />
+            </Link>
+          </button>
+          <button className="p-4 rounded-lg hover:shadow-md">
+            <Link href="mailto: bouba0178@gmail.com">
+              <SiGmail />
+            </Link>
+          </button>
+          <button className="p-4 rounded-lg hover:shadow-md">
+            <Link href="#" target="_blank">
+              <GrDocumentPdf />
+            </Link>
+          </button>
           <ThemeSwitcher />
         </div>
       </div>

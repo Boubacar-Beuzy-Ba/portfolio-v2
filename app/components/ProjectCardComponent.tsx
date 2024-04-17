@@ -33,11 +33,10 @@ export const ProjectCardComponent = () => {
             key={item.sys.id}
           >
             <div className="mx-4">
-              <Image
+              <img
                 src={"https:" + item.fields.coverImage.fields.file.url}
-                width={300}
-                height={300}
                 alt={item.fields.title}
+                className="min-w-80 min-h-80"
               />
             </div>
             <h1 className="text-xl mt-2 mx-4">{item.fields.title}</h1>
