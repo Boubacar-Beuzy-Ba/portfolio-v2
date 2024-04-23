@@ -29,14 +29,14 @@ export const ProjectCardComponent = () => {
       {data &&
         (data as unknown as PortfolioItem[]).map((item) => (
           <div
-            className="rounded-md shadow-md w-auto mx-10 my-3"
+            className="rounded-md shadow-md w-full mx-10 my-3"
             key={item.sys.id}
           >
-            <div className="mx-4">
+            <div className="">
               <img
                 src={"https:" + item.fields.coverImage.fields.file.url}
                 alt={item.fields.title}
-                className="min-w-80 min-h-80"
+                className="min-w-80 min-h-auto w-full"
               />
             </div>
             <h1 className="text-xl mt-2 mx-4">{item.fields.title}</h1>

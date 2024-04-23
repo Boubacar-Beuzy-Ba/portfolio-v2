@@ -1,9 +1,10 @@
 import Image from "next/image";
 import profileImg from "../assets/profile.jpg";
+import { motion } from "framer-motion";
 
 export const HeroComponent = () => {
   return (
-    <div className="w-full bg-[#F5FCFF]">
+    <div className="w-full bg-[#f6f7f9]">
       <div className="flex justify-between gap-2 items-center mx-auto w-[75%]">
         <div className="p-2 w-1/2">
           <h5 className="text-lg font-semibold my-2">Hey, I am Boubacar</h5>
@@ -15,17 +16,17 @@ export const HeroComponent = () => {
             support, and logistics e-commerce operations. Proven in web
             solutions delivery, customer satisfaction, and process optimization.
           </p>
-          <div className="flex items-center">
-            <button className="my-2 bg-black p-4 rounded-md text-gray-200 text-sm">
+          <div className="flex items-center mt-5">
+            <button className="transition duration-700 ease-in-out my-2 shadow-xl p-4 rounded-md text-gray-800 text-sm hover:ring-2 ring-black drop-shadow-2xl">
               Get In Touch
             </button>
           </div>
         </div>
-        <div className="w-1/2 flex items-center justify-end">
+        <div className="w-1/2 flex items-center justify-end bg-blend-multiply">
           <Image
             src={profileImg}
             alt="Boubacar"
-            className="object-cover w-1/2 rounded-2xl"
+            className="object-cover w-1/2"
           />
         </div>
       </div>

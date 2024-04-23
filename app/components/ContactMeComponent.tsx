@@ -1,4 +1,26 @@
+"use client";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 export const ContactMeConponent = () => {
+  // const form = useRef();
+
+  // const sendEmail = (e: React.ChangeEvent<HTMLElement>): void => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm("service_1whz25g", "contact_form", form.current, {
+  //       publicKey: "yjJnnntJShudW7SLX",
+  //     })
+  //     .then(
+  //       () => {
+  //         console.log("SUCCESS!");
+  //       },
+  //       (error) => {
+  //         console.log("FAILED...", error.text);
+  //       }
+  //     );
+  // };
   return (
     <div className="my-4">
       <div className="mx-auto text-center">

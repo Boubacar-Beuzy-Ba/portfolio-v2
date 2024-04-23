@@ -13,8 +13,8 @@ export const AboutMeComponent = () => {
           />
         </div>
         <div className="w-1/2 p-4">
-          <h3 className="font-bold text-2xl text-black">About Me</h3>
-          <p className="text-sm text-gray-700">
+          <h3 className="font-bold text-3xl text-black py-2">About Me</h3>
+          <p className="text-gray-700 text-lg">
             Experienced Web Developer skilled in React with a background in
             Customer Success Management, IT Customer Support, and Head of Ops
             Excellence in Logistics E-commerce. Proven track record in
