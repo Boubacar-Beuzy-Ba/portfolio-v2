@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profileImg from "../assets/profile.jpg";
+import profileImg from "../assets/ProfilePicLinkdn.png";
 import { motion } from "framer-motion";
 
 export const HeroComponent = () => {
