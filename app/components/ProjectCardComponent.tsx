@@ -25,7 +25,7 @@ export const ProjectCardComponent = () => {
   }
 
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-3 gap-4" id="project">
       {data &&
         (data as unknown as PortfolioItem[]).map((item) => (
           <div

@@ -22,14 +22,14 @@ export const ContactMeConponent = () => {
   //     );
   // };
   return (
-    <div className="my-4">
+    <div className="my-4" id="contact">
       <div className="mx-auto text-center">
         <h6 className="text-xs font-semibold">Get in touch</h6>
         <h2 className="text-4xl font-bold">Contact me</h2>
       </div>
       <hr className="mx-16" />
-      <div>
-        <form className="">
+      <div className="flex gap-1">
+        <form className="w-full">
           <div className="flex justify-center items-center my-8">
             <div className="flex flex-col w-[65%] gap-2">
               <label htmlFor="email">E-mail</label>
@@ -88,6 +88,11 @@ export const ContactMeConponent = () => {
             </div>
           </div>
         </form>
+        <div className="flex flex-col space-y-4 justify-center items-center content-center">
+          <p>Email: bouba0178@gmail.com</p>
+          <p>Tel: +221 77 422 35 21 </p>
+          <p>Location: Dakar, Sénégal</p>
+        </div>
       </div>
     </div>
   );

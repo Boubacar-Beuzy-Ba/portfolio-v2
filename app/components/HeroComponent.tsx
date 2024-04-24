@@ -1,6 +1,7 @@
 import Image from "next/image";
 import profileImg from "../assets/ProfilePicLinkdn.png";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const HeroComponent = () => {
   return (
@@ -18,7 +19,7 @@ export const HeroComponent = () => {
           </p>
           <div className="flex items-center mt-5">
             <button className="transition duration-700 ease-in-out my-2 shadow-xl p-4 rounded-md text-gray-800 text-sm hover:ring-2 ring-black drop-shadow-2xl">
-              Get In Touch
+              <Link href="#contact">Get In Touch</Link>
             </button>
           </div>
         </div>

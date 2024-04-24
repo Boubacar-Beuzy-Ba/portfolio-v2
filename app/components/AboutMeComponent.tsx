@@ -3,7 +3,7 @@ import profileImg2 from "../assets/Profile2.jpg";
 
 export const AboutMeComponent = () => {
   return (
-    <>
+    <div id="about">
       <div className="flex items-center gap-2 mx-10 my-10">
         <div className="w-1/2 flex items-center justify-center">
           <Image
@@ -25,6 +25,6 @@ export const AboutMeComponent = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };

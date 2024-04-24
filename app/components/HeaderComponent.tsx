@@ -14,17 +14,17 @@ export const HeaderComponent = () => {
     },
     {
       id: 2,
-      to: "/",
-      title: "Portfolio",
+      to: "/#project",
+      title: "Project",
     },
     {
       id: 3,
-      to: "/",
+      to: "/#about",
       title: "About Me",
     },
     {
       id: 4,
-      to: "/",
+      to: "/#testimonials",
       title: "Testimonials",
     },
   ];
