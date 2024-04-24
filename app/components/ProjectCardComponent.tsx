@@ -25,11 +25,11 @@ export const ProjectCardComponent = () => {
   }
 
   return (
-    <div className="grid grid-cols-3 gap-4" id="project">
+    <div className="flex flex-col sm:grid sm:grid-cols-3 gap-4" id="project">
       {data &&
         (data as unknown as PortfolioItem[]).map((item) => (
           <div
-            className="rounded-md shadow-md w-full mx-10 my-3"
+            className="rounded-md shadow-md sm:w-full w-fit mx-2 sm:mx-10 my-3"
             key={item.sys.id}
           >
             <div className="">

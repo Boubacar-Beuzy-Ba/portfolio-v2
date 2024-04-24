@@ -17,13 +17,15 @@ export default function Home() {
       <div className="mx-auto w-auto sm:w-[75%]">
         <AboutMeComponent />
       </div>
-      <div className="w-[75%] mx-auto">
-        <hr className="mx-16" />
-        <h2 className="text-2xl text-center font-semibold my-6">Projects</h2>
+      <div className="w-auto sm:w-[75%] mx-auto">
+        <hr className="mx-auto sm:mx-16" />
+        <h2 className="text-xl sm:text-2xl text-center font-semibold my-6">
+          Projects
+        </h2>
         <ProjectCardComponent />
-        <hr className="mx-16" />
+        <hr className="mx-auto sm:mx-16" />
       </div>
-      <div className="w-[70%] mx-auto">
+      <div className="w-auto sm:w-[70%] mx-auto">
         <ContactMeConponent />
       </div>
       <footer>

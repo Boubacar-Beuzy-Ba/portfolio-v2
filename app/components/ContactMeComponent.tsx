@@ -31,11 +31,11 @@ export const ContactMeConponent = () => {
         <h6 className="text-xs font-semibold">Get in touch</h6>
         <h2 className="text-4xl font-bold">Contact me</h2>
       </div>
-      <hr className="mx-16" />
-      <div className="flex gap-1">
-        <form className="w-2/3">
+      <hr className="mx-auto sm:mx-16" />
+      <div className="flex flex-col sm:flex-row gap-1">
+        <form className="w-full sm:w-2/3 mx-4">
           <div className="flex justify-center items-center my-8">
-            <div className="flex flex-col w-[65%] gap-2">
+            <div className="flex flex-col w-[90%] sm:w-[65%] gap-2">
               <label htmlFor="email">E-mail</label>
               <input
                 type="email"
@@ -46,7 +46,7 @@ export const ContactMeConponent = () => {
             </div>
           </div>
           <div className="flex justify-center items-center my-8">
-            <div className="flex flex-col w-[65%] gap-2">
+            <div className="flex flex-col w-[90%] sm:w-[65%] gap-2">
               <label htmlFor="phone">Phone Number</label>
               <input
                 type="tel"
@@ -57,7 +57,7 @@ export const ContactMeConponent = () => {
             </div>
           </div>
           <div className="flex justify-center items-center my-2">
-            <div className="flex flex-col w-[65%] gap-2">
+            <div className="flex flex-col w-[90%] sm:w-[65%] gap-2">
               <label htmlFor="topic">Choose a topic</label>
               <select
                 name="topic"
@@ -74,7 +74,7 @@ export const ContactMeConponent = () => {
             </div>
           </div>
           <div className="flex justify-center items-center my-4">
-            <div className="flex flex-col w-[65%] gap-2">
+            <div className="flex flex-col w-[90%] sm:w-[65%] gap-2">
               <label htmlFor="message">Message</label>
               <textarea
                 name="message"
@@ -86,7 +86,7 @@ export const ContactMeConponent = () => {
           </div>
           <div className="flex justify-center items-center my-4">
             <div className="flex items-center justify-center w-[65%] gap-2">
-              <button className="p-4 bg-black rounded-lg text-white w-1/4">
+              <button className="p-4 bg-black rounded-lg text-white w-full sm:w-1/4">
                 Submit
               </button>
             </div>
