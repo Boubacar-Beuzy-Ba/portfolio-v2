@@ -14,7 +14,7 @@ export default function Home() {
         <HeaderComponent />
       </header>
       <HeroComponent />
-      <div className="mx-auto w-[75%]">
+      <div className="mx-auto w-auto sm:w-[75%]">
         <AboutMeComponent />
       </div>
       <div className="w-[75%] mx-auto">
