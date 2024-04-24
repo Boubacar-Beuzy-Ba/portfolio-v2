@@ -5,11 +5,14 @@ import { AboutMeComponent } from "./components/AboutMeComponent";
 import { ContactMeConponent } from "./components/ContactMeComponent";
 import { ProjectCardComponent } from "./components/ProjectCardComponent";
 import { CarousselComponent } from "./components/CarousselComponent";
+import { FooterComponent } from "./components/FooterComponent";
 
 export default function Home() {
   return (
     <>
-      <HeaderComponent />
+      <header>
+        <HeaderComponent />
+      </header>
       <HeroComponent />
       <div className="mx-auto w-[75%]">
         <AboutMeComponent />
@@ -20,9 +23,12 @@ export default function Home() {
         <ProjectCardComponent />
         <hr className="mx-16" />
       </div>
-      <div className="w-[50%] mx-auto">
+      <div className="w-[70%] mx-auto">
         <ContactMeConponent />
       </div>
+      <footer>
+        <FooterComponent />
+      </footer>
     </>
   );
 }

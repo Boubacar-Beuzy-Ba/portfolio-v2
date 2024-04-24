@@ -1,6 +1,10 @@
 "use client";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { SiGmail } from "react-icons/si";
+import { GiMailbox } from "react-icons/gi";
+import { BiPhoneIncoming } from "react-icons/bi";
+import { PiNavigationArrow } from "react-icons/pi";
 
 export const ContactMeConponent = () => {
   // const form = useRef();
@@ -29,7 +33,7 @@ export const ContactMeConponent = () => {
       </div>
       <hr className="mx-16" />
       <div className="flex gap-1">
-        <form className="w-full">
+        <form className="w-2/3">
           <div className="flex justify-center items-center my-8">
             <div className="flex flex-col w-[65%] gap-2">
               <label htmlFor="email">E-mail</label>
@@ -88,10 +92,19 @@ export const ContactMeConponent = () => {
             </div>
           </div>
         </form>
-        <div className="flex flex-col space-y-4 justify-center items-center content-center">
-          <p>Email: bouba0178@gmail.com</p>
-          <p>Tel: +221 77 422 35 21 </p>
-          <p>Location: Dakar, Sénégal</p>
+        <div className="flex flex-col space-y-4 justify-center items-center content-center font-semibold">
+          <div className="flex gap-2 items-center justify-center">
+            <GiMailbox />
+            <p className="font-normal text-gray-600">bouba0178@gmail.com</p>
+          </div>
+          <div className="flex gap-2 items-center justify-center">
+            <BiPhoneIncoming />
+            <p className="font-normal text-gray-600">+221 77 422 35 21</p>
+          </div>
+          <div className="flex gap-2 space-x-6 items-center justify-center">
+            <PiNavigationArrow />
+            <p className="font-normal text-gray-600">Dakar, Sénégal</p>
+          </div>
         </div>
       </div>
     </div>
