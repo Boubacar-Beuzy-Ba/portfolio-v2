@@ -16,7 +16,7 @@ export const AboutMeComponent = () => {
           <h3 className="font-bold text-xl md:text-3xl text-black py-2">
             About Me
           </h3>
-          <p className="text-gray-700 text-md text-wrap md:text-lg">
+          <p className="text-gray-700 text-md text-wrap text-justify md:text-lg">
             Experienced Web Developer skilled in React with a background in
             Customer Success Management, IT Customer Support, and Head of Ops
             Excellence in Logistics E-commerce. Proven track record in

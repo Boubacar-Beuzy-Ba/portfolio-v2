@@ -19,7 +19,7 @@ export const HeroComponent = () => {
           <h2 className="text-md md:text-3xl font-semibold my-2">
             I create website and web app experience
           </h2>
-          <p className="text-md md:text-lg my-2">
+          <p className="text-md md:text-lg my-2 text-justify">
             Experienced React Developer with expertise in customer success, IT
             support, and logistics e-commerce operations. Proven in web
             solutions delivery, customer satisfaction, and process optimization.

@@ -40,7 +40,7 @@ export const ProjectCardComponent = () => {
               />
             </div>
             <h1 className="text-xl mt-2 mx-4">{item.fields.title}</h1>
-            <p className="text-md mx-4">
+            <p className="text-md mx-4 text-wrap">
               {item.fields.description.content[0].content[0].value}
             </p>
             <div className="flex justify-between items-center mx-4 my-4">
