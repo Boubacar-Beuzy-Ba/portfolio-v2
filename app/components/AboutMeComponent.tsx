@@ -5,7 +5,7 @@ export const AboutMeComponent = () => {
   return (
     <div id="about">
       <div className="flex flex-col md:flex-row items-center gap-2 mx-auto md:mx-10 my-10">
-        <div className="md:w-1/2 w-full flex items-center justify-center">
+        <div className="md:w-1/2 w-auto flex items-center justify-center">
           <Image
             src={profileImg2}
             alt="About Boubacar"

@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export const HeroComponent = () => {
   return (
-    <div className="w-full bg-[#f6f7f9]">
-      <div className="flex flex-col md:flex-row justify-between gap-2 items-center mx-2 md:mx-auto w-full md:w-[75%]">
+    <div className="w-auto bg-[#f6f7f9]">
+      <div className="flex flex-col md:flex-row justify-between gap-2 items-center mx-2 md:mx-auto w-auto md:w-[75%]">
         <Image
           src={profileImg}
           alt="Boubacar"
           className="object-cover w-36 md:hidden"
         />
-        <div className="p-0 mx-4 md:p-2 w-auto md:w-1/2">
+        <div className="mx-4 md:p-2 w-auto md:w-1/2">
           <h5 className="text-md md:text-lg font-semibold my-2">
             Hey, I am Boubacar
           </h5>
