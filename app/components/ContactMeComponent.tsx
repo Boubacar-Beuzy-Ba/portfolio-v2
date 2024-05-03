@@ -7,24 +7,26 @@ import { BiPhoneIncoming } from "react-icons/bi";
 import { PiNavigationArrow } from "react-icons/pi";
 
 export const ContactMeConponent = () => {
-  // const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  // const sendEmail = (e: React.ChangeEvent<HTMLElement>): void => {
-  //   e.preventDefault();
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>): void => {
+    e.preventDefault();
 
-  //   emailjs
-  //     .sendForm("service_1whz25g", "contact_form", form.current, {
-  //       publicKey: "yjJnnntJShudW7SLX",
-  //     })
-  //     .then(
-  //       () => {
-  //         console.log("SUCCESS!");
-  //       },
-  //       (error) => {
-  //         console.log("FAILED...", error.text);
-  //       }
-  //     );
-  // };
+    if (!form.current) return;
+
+    emailjs
+      .sendForm("service_1whz25g", "contact_form", form.current, {
+        publicKey: "yjJnnntJShudW7SLX",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <div className="my-4" id="contact">
       <div className="mx-auto text-center">
@@ -33,7 +35,7 @@ export const ContactMeConponent = () => {
       </div>
       <hr className="mx-auto md:mx-16" />
       <div className="flex flex-col md:flex-row gap-1">
-        <form className="w-[90%] md:w-2/3 mx-4">
+        <form className="w-[90%] md:w-2/3 mx-4" ref={form} onSubmit={sendEmail}>
           <div className="flex justify-center items-center my-8">
             <div className="flex flex-col w-[90%] md:w-[65%] gap-2">
               <label htmlFor="email">E-mail</label>
@@ -65,7 +67,7 @@ export const ContactMeConponent = () => {
                 className="p-3 w-full border rounded-md bg-white"
               >
                 <option value="">Please select a topic</option>
-                <option value="consultant">Consultat</option>
+                <option value="consultant">Consultant</option>
                 <option value="wp-website">Wordpress Website</option>
                 <option value="web-app">Web Application</option>
                 <option value="design">Maquette and Design</option>
