@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import profileImg from "../assets/ProfilePicLinkdn.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
 
 export const HeroComponent = () => {
   return (
@@ -17,7 +19,21 @@ export const HeroComponent = () => {
             Hey, I am Boubacar
           </h5>
           <h2 className="text-md md:text-3xl font-semibold my-2">
-            I create website and web app experience
+            <TypeAnimation
+              sequence={[
+                "I create website and web app experience using JS Frameworks and libraries",
+                1000,
+                "I create website and web app experience using Content Management System like Wordpress",
+                1000,
+                "I create website and web app experience using JamStack",
+                1000,
+                "I create website and web app experience using Figma",
+                1000,
+              ]}
+              speed={50}
+              style={{ fontSize: "1em" }}
+              repeat={Infinity}
+            />
           </h2>
           <p className="text-md md:text-lg my-2 text-justify">
             Experienced React Developer with expertise in customer success, IT
