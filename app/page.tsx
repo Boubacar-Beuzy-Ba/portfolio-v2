@@ -10,7 +10,7 @@ import { FooterComponent } from "./components/FooterComponent";
 export default function Home() {
   return (
     <div className="dark:bg-gray-800">
-      <header className="dark:bg-gray-700 sticky top-0 ">
+      <header className="dark:bg-gray-700 sticky top-0 bg-white">
         <HeaderComponent />
       </header>
       <HeroComponent />
