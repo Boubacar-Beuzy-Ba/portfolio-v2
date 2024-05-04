@@ -13,7 +13,9 @@ export default function Home() {
       <header className="dark:bg-gray-700 sticky top-0 bg-white">
         <HeaderComponent />
       </header>
-      <HeroComponent />
+      <section className="md:mb-2 mb-64">
+        <HeroComponent />
+      </section>
       <div className="mx-auto w-auto sm:w-[75%]">
         <AboutMeComponent />
       </div>
