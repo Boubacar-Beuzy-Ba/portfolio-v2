@@ -4,31 +4,41 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import moon from "../assets/moon.png";
-import sun from "../assets/sun.png";
+import { FaSun, FaMoon, FaLightbulb } from "react-icons/fa";
 
 export function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null;
+  if (!mounted)
+    return (
+      <FaLightbulb width={36} height={36} title="Loading Light/Dark Toggle" />
+    );
 
-  return (
-    <div>
-      <button
-        onClick={() => (mounted ? setTheme("light") : setTheme("dark"))}
-        className="rounded-full p-2"
-      >
-        {theme == "light" ? (
-          <Image src={moon} width={15} height={15} alt="Moon" />
-        ) : (
-          <Image src={sun} width={20} height={20} alt="Sun" />
-        )}
-      </button>
-    </div>
-  );
+  if (resolvedTheme === "light") {
+    return (
+      <FaMoon
+        width={15}
+        height={15}
+        onClick={() => {
+          setTheme("dark");
+        }}
+      />
+    );
+  }
+
+  if (resolvedTheme === "dark") {
+    return (
+      <FaSun
+        width={20}
+        height={20}
+        className="dark:fill-white"
+        onClick={() => setTheme("light")}
+      />
+    );
+  }
 }

@@ -7,7 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export const HeroComponent = () => {
   return (
-    <div className="w-auto bg-[#f6f7f9]">
+    <div className="w-auto bg-[#f6f7f9] dark:bg-gray-800 h-screen flex align-middle">
       <div className="flex flex-col md:flex-row justify-between gap-2 items-center mx-2 md:mx-auto w-auto md:w-[75%]">
         <Image
           src={profileImg}
@@ -41,7 +41,7 @@ export const HeroComponent = () => {
             solutions delivery, customer satisfaction, and process optimization.
           </p>
           <div className="flex items-center justify-around gap-1 mt-5">
-            <button className="transition duration-700 ease-in-out my-2 shadow-xl p-4 rounded-md text-gray-800 text-md hover:ring-2 ring-black drop-shadow-2xl">
+            <button className="transition duration-700 ease-in-out my-2 shadow-xl p-4 rounded-md text-gray-800 text-md hover:ring-2 ring-black drop-shadow-2xl dark:text-white dark:ring-white ">
               <Link href="#contact">Get In Touch</Link>
             </button>
           </div>

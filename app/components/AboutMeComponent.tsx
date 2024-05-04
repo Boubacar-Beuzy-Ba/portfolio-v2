@@ -3,7 +3,7 @@ import profileImg2 from "../assets/Profile2.jpg";
 
 export const AboutMeComponent = () => {
   return (
-    <div id="about">
+    <div id="about" className="h-screen flex align-middle">
       <div className="flex flex-col md:flex-row items-center gap-2 mx-auto md:mx-10 my-10">
         <div className="md:w-1/2 w-auto flex items-center justify-center">
           <Image
@@ -13,10 +13,10 @@ export const AboutMeComponent = () => {
           />
         </div>
         <div className="md:w-1/2 mx-2 p-4">
-          <h3 className="font-bold text-xl md:text-3xl text-black py-2">
+          <h3 className="font-bold text-xl md:text-3xl text-black py-2 dark:text-white">
             About Me
           </h3>
-          <p className="text-gray-700 text-md text-wrap text-justify md:text-lg">
+          <p className="text-gray-700 text-md text-wrap text-justify md:text-lg dark:text-white">
             Experienced Web Developer skilled in React with a background in
             Customer Success Management, IT Customer Support, and Head of Ops
             Excellence in Logistics E-commerce. Proven track record in

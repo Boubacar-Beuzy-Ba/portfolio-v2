@@ -46,12 +46,12 @@ export const ProjectCardComponent = () => {
                 {item.fields.description.content[0].content[0].value}
               </p>
               <div className="flex justify-between items-center mx-4 my-4">
-                <button className="bg-[#F5FCFF] p-2">
+                <button className="bg-[#F5FCFF] dark:bg-transparent dark:hover:ring-1 dark:ring-white p-2">
                   <Link href={item.fields.demoUrl} target="_blank">
                     Demo
                   </Link>
                 </button>
-                <button className="bg-[#F5FCFF] p-2">
+                <button className="bg-[#F5FCFF] dark:bg-transparent dark:hover:ring-1 dark:ring-white p-2">
                   <Link href={item.fields.sourceCodeUrl} target="_blank">
                     Source Code
                   </Link>

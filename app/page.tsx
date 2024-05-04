@@ -9,8 +9,8 @@ import { FooterComponent } from "./components/FooterComponent";
 
 export default function Home() {
   return (
-    <>
-      <header>
+    <div className="dark:bg-gray-800">
+      <header className="dark:bg-gray-700 sticky top-0 ">
         <HeaderComponent />
       </header>
       <HeroComponent />
@@ -18,7 +18,6 @@ export default function Home() {
         <AboutMeComponent />
       </div>
       <div className="w-[90%] sm:w-[75%] mx-auto">
-        <hr className="mx-auto sm:mx-16" />
         <h2 className="text-xl sm:text-2xl text-center font-semibold my-6">
           Projects
         </h2>
@@ -31,6 +30,6 @@ export default function Home() {
       <footer>
         <FooterComponent />
       </footer>
-    </>
+    </div>
   );
 }
