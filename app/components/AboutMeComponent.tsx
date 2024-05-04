@@ -3,13 +3,13 @@ import profileImg2 from "../assets/Profile2.jpg";
 
 export const AboutMeComponent = () => {
   return (
-    <div id="about" className="h-screen flex align-middle">
-      <div className="flex flex-col md:flex-row items-center gap-2 mx-auto md:mx-10 my-10">
-        <div className="md:w-1/2 w-auto flex items-center justify-center">
+    <div id="about" className="h-screen flex align-middle mt-10">
+      <div className="flex flex-col md:flex-row items-center gap-1 mx-auto md:mx-8 my-10">
+        <div className="md:w-fit object-fill w-auto flex items-center justify-center">
           <Image
             src={profileImg2}
             alt="About Boubacar"
-            className="w-full md:rounded-2xl"
+            className="w-full md:rounded-xl"
           />
         </div>
         <div className="md:w-1/2 mx-2 p-4">

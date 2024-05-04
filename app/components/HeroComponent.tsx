@@ -12,7 +12,7 @@ export const HeroComponent = () => {
         <Image
           src={profileImg}
           alt="Boubacar"
-          className="object-cover w-36 md:hidden"
+          className="object-fill w-auto md:hidden"
         />
         <div className="mx-4 md:p-2 w-auto md:w-1/2">
           <h5 className="text-md md:text-lg font-semibold my-2">
@@ -47,11 +47,7 @@ export const HeroComponent = () => {
           </div>
         </div>
         <div className="hidden md:w-1/2 md:flex md:items-center md:justify-end bg-blend-multiply">
-          <Image
-            src={profileImg}
-            alt="Boubacar"
-            className="object-cover w-1/2"
-          />
+          <Image src={profileImg} alt="Boubacar" className="object-fill" />
         </div>
       </div>
     </div>
