@@ -3,8 +3,8 @@ import profileImg2 from "../assets/Profile2.jpg";
 
 export const AboutMeComponent = () => {
   return (
-    <div id="about" className="h-screen flex align-middle mt-10">
-      <div className="flex flex-col md:flex-row items-center gap-1 mx-auto md:mx-8 my-10">
+    <div id="about" className="pt-10">
+      <div className="flex flex-col md:flex-row items-center gap-1 mx-auto md:mx-8 my-10 h-screen align-middle">
         <div className="md:w-fit object-fill w-auto flex items-center justify-center">
           <Image
             src={profileImg2}
