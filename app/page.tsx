@@ -6,6 +6,7 @@ import { ContactMeConponent } from "./components/ContactMeComponent";
 import { ProjectCardComponent } from "./components/ProjectCardComponent";
 import { CarousselComponent } from "./components/CarousselComponent";
 import { FooterComponent } from "./components/FooterComponent";
+import { TestimonialComponent } from "./components/TestimonialComponent";
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
         </h2>
         <ProjectCardComponent />
         <hr className="mx-auto sm:mx-16" />
+      </div>
+      <div className="w-[90%] sm:w-[75%] mx-auto">
+        <TestimonialComponent />
       </div>
       <div className="w-[90%] sm:w-[70%] mx-auto">
         <ContactMeConponent />
