@@ -34,6 +34,10 @@ yarn-error.log*
 # sanity
 .sanity
 
+# next.js auto-generated agent docs
+/AGENTS.md
+/CLAUDE.md
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
